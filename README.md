@@ -48,6 +48,6 @@ Tanto el controlador, como los items del menú deben tener validación para sola
 * Se pueden editar las publicaciones
 * Se pueden eliminar las publicaciones
 
-Se espera un historial de Git conciso y documentado. Cuando el desarrollo haya terminado, se debe crear una Solicitud de Fusión (Merge Request) para notificar al equipo técnico que la prueba está lista para ser evaluada. Solo es necesario versionar el directorio que contiene el módulo y no la aplicación de Magento. La extensión debe ser auto-instalable con el comando "magento setup:upgrade".
+Se espera un historial de Git conciso y documentado. Cuando el desarrollo haya terminado, se debe crear una Solicitud de Fusión (Pull Request) para notificar al equipo técnico que la prueba está lista para ser evaluada. Solo es necesario versionar el directorio que contiene el módulo y no la aplicación de Magento. La extensión debe ser auto-instalable con el comando "magento setup:upgrade".
 
 ¡Buena suerte!
