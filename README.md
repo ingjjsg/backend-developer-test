@@ -1,47 +1,53 @@
-## Development test for PHP, HTML, XML, Javascript Developer at OMNI.PRO
+# Prueba de desarrollo para desarrollador de PHP, HTML y XML en OMNI.PRO
 
-## Introduction
-With this test we want to evaluate your skills in the following areas:
+## Introducción
+Con esta prueba queremos evaluar tus habilidades en las siguientes áreas:
+* Uso óptimo de las buenas prácticas y estandares de programación de Adobe Commerce
+* Uso óptimo de PHP
+* Uso óptimo de MySQL
+* Uso medio de HTML
+* Uso medio de Git
+* Uso medio de XML
+  
+Durante esta prueba puedes seguir tu propio proceso de desarrollo. Por favor ten en cuenta que queremos obtener un producto que equilibre calidad y cantidad, si no eres capaz de terminar esta prueba en su totalidad en el tiempo dado aún deberíamos ser capaces de apreciar tu trabajo y habilidades. Piensa en esta pequeña aplicación como un proyecto que será mantenido y posiblemente extendido en el futuro por otros desarrolladores.
 
-* Optimal use of Adobe Commerce Best Practices
-* Optimal use of PHP
-* Optimal use of MySQL
-* Optimal use of Javascript and preferred libraries
-* Medium use of HTML
-* Medium use of Git
-* Medium use of XML
-* Programming best practices
+## Descripción:
+Construye un módulo simple para Adobe Commerce con funcionalidad de blog (solo administración desde el Panel de Administración)
 
-During this test you can follow your personal development process. Please keep in mind that we want to get a product that balances quality and quantity, if you're not capable of finishing this test in its entirety in the given timeframe we still should be able to appreciate your work and skills. Think about this small application as a project that will be maintained and possibly extended in the future by other developers.
+## Caracteristicas:
+* Se debe crear un módulo llamado Blog dentro del Vendor Omnipro
+* Se debe crear un menu en la sección Content de Magento llamada OMNI.PRO y Tendrá un Item llamado Blog
+* Se debe poder visualizar en el frontend a traves de la ruta /blog una lista de los posts creados en el admin ordenados por fecha de publicación
 
-## Development
-Build a simple Adobe Commerce module with blog functionality (only Admin Panel administration)
+## Grid de Blog:
+- Columnas:
+- Id
+- Titulo
+- Fecha de Creación
 
-The form should have the following fields:
-* Title
-* Content
-* Image
-* Email address
+El grid debe tener las siguientes acciones:
+- Eliminar los posts seleccionados
+- Eliminar todos los posts
 
-It should not be possible to save the post if:
-* The email address is invalid or empty
-* The title is empty
+## Formulario de creación de Posts
+El formulario de blog debe tener los siguientes inputs:
+- Titulo
+- Contenido
 
+El Título y contenido deben ser requeridos
+Tanto el controlador, como los items del menú deben tener validación para solamente poder ser utilizados por un rol que tenga permisos de este recurso
 
-After submitting a new post or edit the PHP backend will run another validation round:
-* It will verify that the email address is equal to a Magento user email that holds the Administrator role.
+# En la página del blog debe mostrar cada post debe mostrar la siguiente información:
+- Titulo
+- Fecha de Publicación (Formato DD/MM/YYYY)
+- Contenido
 
-After validating the post:
-* Add a timestamp
+# Desde el panel de administración de Magento:
+* Se deben visualizar las publicaciones existentes
+* Se pueden crear publicaciones
+* Se pueden editar las publicaciones
+* Se pueden eliminar las publicaciones
 
-From the Magento admin panel
-* The existing posts should be visualized
-* The posts can be created
-* The posts can be edited
-* The posts can be deleted
+Se espera un historial de Git conciso y documentado. Cuando el desarrollo haya terminado, se debe crear una Solicitud de Fusión (Merge Request) para notificar al equipo técnico que la prueba está lista para ser evaluada. Solo es necesario versionar el directorio que contiene el módulo y no la aplicación de Magento. La extensión debe ser auto-instalable con el comando "magento setup:upgrade".
 
-A concise and documented Git history is expected. When the development has been finished a Merge Request should be created in order to notify the technical team that the test is ready to be evaluated. It is only necessary to version the directory that holds the module and not the Magento application. The extension should be auto-installable with the command "magento setup:upgrade".
-
-Good luck!
-
-
+¡Buena suerte!
