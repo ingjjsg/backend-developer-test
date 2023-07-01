@@ -17,7 +17,6 @@ Construye un módulo simple para Adobe Commerce con funcionalidad de blog (solo 
 ## Caracteristicas:
 * Se debe crear un módulo llamado Blog dentro del Vendor Omnipro
 * Se debe crear un menu en la sección Content de Magento llamada OMNI.PRO y Tendrá un Item llamado Blog
-* Se debe poder visualizar en el frontend a traves de la ruta /blog una lista de los posts creados en el admin ordenados por fecha de publicación
 
 ## Grid de Blog:
 - Columnas:
@@ -26,6 +25,7 @@ Construye un módulo simple para Adobe Commerce con funcionalidad de blog (solo 
 - Fecha de Creación
 
 El grid debe tener las siguientes acciones:
+- Agregar / editar post
 - Eliminar los posts seleccionados
 - Eliminar todos los posts
 
@@ -37,7 +37,7 @@ El formulario de blog debe tener los siguientes inputs:
 El Título y contenido deben ser requeridos
 Tanto el controlador, como los items del menú deben tener validación para solamente poder ser utilizados por un rol que tenga permisos de este recurso
 
-# En la página del blog debe mostrar cada post debe mostrar la siguiente información:
+# Cada post debe mostrar la siguiente información:
 - Titulo
 - Fecha de Publicación (Formato DD/MM/YYYY)
 - Contenido
