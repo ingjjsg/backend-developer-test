@@ -11,6 +11,8 @@ Con esta prueba queremos evaluar tus habilidades en las siguientes áreas:
   
 Durante esta prueba puedes seguir tu propio proceso de desarrollo. Por favor ten en cuenta que queremos obtener un producto que equilibre calidad y cantidad, si no eres capaz de terminar esta prueba en su totalidad en el tiempo dado aún deberíamos ser capaces de apreciar tu trabajo y habilidades. Piensa en esta pequeña aplicación como un proyecto que será mantenido y posiblemente extendido en el futuro por otros desarrolladores.
 
+Usar la versión de 2.4.5 ó 2.4.6 de Magento
+
 ## Descripción:
 Construye un módulo simple para Adobe Commerce con funcionalidad de blog (solo administración desde el Panel de Administración)
 
